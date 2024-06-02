@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>TO-DO App</h1>
+        <div class="input-container">
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <input type="text" id="task-desc" placeholder="Add a description">
+            <select id="task-priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="date" id="task-date">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <input type="text" id="search-task" placeholder="Search tasks...">
+        <select id="filter-priority">
+            <option value="All">All Priorities</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <select id="filter-status">
+            <option value="All">All Statuses</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

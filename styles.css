@@ -1,0 +1,141 @@
+/* Previous styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select,
+.input-container button {
+    margin: 5px 0;
+}
+
+#new-task,
+#task-desc,
+#task-date,
+#task-priority,
+#add-task-btn {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#task-priority {
+    flex: 0.5;
+}
+
+#add-task-btn {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+#search-task,
+#filter-priority,
+#filter-status {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li.overdue {
+    border-color: red;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-buttons .edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.task-buttons .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.task-buttons .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.task-buttons .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.task-buttons .toggle-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.task-buttons .toggle-btn:hover {
+    background-color: #138496;
+}
